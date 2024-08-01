@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="login-container">
+        <h1>Social App</h1>
+        <div class="form-container">
+            <p>Log in to Social App</p>
+            <form onsubmit="login(); return false;">
+                <input type="email" name="email" id="login-email" placeholder="Email address" required>
+                <input type="password" name="password" id="login-password" placeholder="Password" required/>
+                <button type="submit">Log in</button>
+            </form>
+            <div class="links-container">
+                <a href="#">Forgotten account?</a>
+                <a href="signup.html">Sign up for Social App</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

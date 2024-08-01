@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="login-container">
+        <h1>Social App</h1>
+        <div class="form-container">
+            <p>Sign Up to Social App</p>
+            <form onsubmit="signUp(); return false;">
+                <input type="text" name="name" id="signname" placeholder="UserName" aria-required="true">
+                <input type="email" name="email" id="signemail" placeholder="Email address or phone number" aria-required="true">
+                <input type="password" name="password" id="signUpPassword" placeholder="Password" aria-required="true"/>
+                <input type="password" name="password" id="confirm-password" placeholder="Confirm Password" aria-required="true"/>
+                <button type="submit">Sign Up</button>
+            </form>
+            <div class="links-container">
+                <a href="index.html">Already have an account?</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
